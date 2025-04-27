@@ -1,0 +1,11 @@
+INFO:__main__:[7, 8, 24, 469, 274, 82, 698, 84]
+DEBUG:__main__:Add: 7 => 7
+DEBUG:__main__:Add: 8 => 15
+DEBUG:__main__:Add: 24 => 39
+DEBUG:__main__:Add: 469 => 508
+DEBUG:__main__:Add: 274 => 782
+DEBUG:__main__:Add: 82 => 864
+DEBUG:__main__:Add: 698 => 1562
+DEBUG:__main__:Add: 84 => 1646
+INFO:__main__:1646
+WARNING:__main__:List is empty.
