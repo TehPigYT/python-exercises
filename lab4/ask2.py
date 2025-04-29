@@ -5,11 +5,13 @@ class Juice:
         self.price = price
 
     def __str__(self):
-        return (self.name + ' ('+str(self.capacity)+'L)')
+        return self.name + " (" + str(self.capacity) + "L)"
 
     def __add__(self, other):
         new_price = self.price + other.price
-        return Juice(self.name + '&' + other.name, self.capacity + other.capacity, new_price)
+        return Juice(
+            self.name + "&" + other.name, self.capacity + other.capacity, new_price
+        )
 
     def pour(self, percentage):
         assert 0.0 < percentage <= 1.0
@@ -20,8 +22,9 @@ class Juice:
         self.price -= new_price
         return Juice(self.name, new_capacity, new_price)
 
-a = Juice('Orange', 1.5, 40)
-b = Juice('Apple', 2.0, 70)
+
+a = Juice("Orange", 1.5, 40)
+b = Juice("Apple", 2.0, 70)
 
 result = a + b
 print(result)

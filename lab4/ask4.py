@@ -1,5 +1,6 @@
 import datetime
 
+
 class Document:
     def __init__(self, creation_date):
         self.authors = []
@@ -10,6 +11,7 @@ class Document:
 
     def __str__(self):
         return f"Document created at {self.creation_date} authors={', '.join(self.authors)}"
+
 
 class Book(Document):
     def __init__(self, creation_date, title):
