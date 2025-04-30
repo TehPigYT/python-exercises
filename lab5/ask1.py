@@ -23,7 +23,7 @@ def delete_task():
 
 
 root = tk.Tk()
-root.title("Λίστα εργασιών")
+root.title("[] Task List []")
 tasks = tk.Variable(value=[])
 
 frame_tasks = ttk.Frame(root)
