@@ -2,7 +2,7 @@ import unittest
 
 
 class Stack:
-    list_empty = "Η στοίβα δεν περιέχει στοιχεία"
+    list_empty = "List doesn't have items."
 
     def __init__(self):
         self.data = []
@@ -35,7 +35,7 @@ class Stack:
 class TestHammingDistance(unittest.TestCase):
     def test_Stack(self):
         s = Stack()
-        self.assertTrue(str(s) == "Η στοίβα δεν περιέχει στοιχεία")
+        self.assertTrue(str(s) == "List doesn't have items.")
         s.push(1)
         self.assertTrue(str(s) == "->1\n")
         s.push(2)
